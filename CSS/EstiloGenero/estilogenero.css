@@ -1,0 +1,158 @@
+/* Seção de Introdução */
+section.intro-funk{
+    background: linear-gradient(135deg, #f2c700 0%, #ff6600 100%);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    max-width: 1200px;
+    border: 2px solid #fff;
+    margin-top: 8%;
+}
+
+.intro-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    margin-bottom: 20px;
+}
+
+.intro-funk{
+    background: linear-gradient(135deg, #f2c700 0%, #ff6600 100%);
+    color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+    margin: 40px auto;
+    border: 2px solid #fff;
+}
+
+.intro-text h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text p{
+    font-size: 1.125rem; 
+    line-height: 1.8;
+    max-width: 100%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: justify;
+}
+
+.intro-image{
+    margin-top: 20px;
+}
+
+.intro-image img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Seção de Música */
+section.musicas{
+    background: radial-gradient(circle at center, #1e1e1e, #121212);
+}
+
+.container-lg{
+    max-width: 1000px;
+}
+
+.musica-info{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.musica-info:hover{
+    transform: scale(1.05);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.capa-musica{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 5px solid #f2c700;
+    transition: opacity 0.3s;
+}
+
+.musica-content:hover .capa-musica{
+    opacity: 0.7;
+}
+
+.musica-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.musica-info:hover .musica-overlay{
+    opacity: 1;
+}
+
+.musica-details h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.musica-details p{
+    font-size: 1.125rem;
+    margin: 5px 0;
+}
+
+.justify{
+    text-align: justify;
+}
+
+audio{
+    margin-top: 10px;
+    width: 100%;
+}
+
+@media (min-width: 576){
+    section.intro-funk{
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 576px){
+    section.intro-funk{
+        margin-top: 120px;
+    }
+    .musica-details h2{
+        font-size: 1rem;
+    }
+
+    .musica-details p{
+        font-size: 0.8rem;
+    }
+}
+
+
